@@ -1,0 +1,20 @@
+extends ./pxl-layout.jade
+block contenido
+	section(class="row")
+		div(class="col-full")
+			h2 Voluntarios
+			p Los Voluntarios y Colaboradores han donado no solo su tiempo, sino que han donado amor, entrega y pasi&oacute;n.
+
+
+
+	section(class="row")
+		div(class="col-full")
+			p Total de Voluntarios #{voluntarios.length}
+			table.table.table-hover
+				thead
+					tr
+						th Nombre Voluntario
+				tbody
+					each voluntario in voluntarios
+						tr
+							td= voluntario.nombre

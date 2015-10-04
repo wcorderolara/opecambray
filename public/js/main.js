@@ -28,3 +28,7 @@ $("#addEmpresa").on("click", function (e){
 $("#addNoticia").on("click", function (e){
 	$("#frmNoticia").submit();
 });
+
+$("#addVoluntario").on("click", function (e){
+	$("#frmVoluntario").submit();
+});

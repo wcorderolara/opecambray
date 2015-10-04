@@ -3,6 +3,7 @@ var Desaparecido = require('../models/desaparecido');
 var Fallecido = require('../models/fallecido');
 var Empresa = require('../models/empresacolabora');
 var Noticia = require('../models/noticia');
+var Voluntario = require('../models/voluntarios');
 var _ = require('underscore');
 
 
@@ -101,6 +102,25 @@ var homeController = function(app){
 
 	app.get('/add/noticia', function (req,res){
 		res.render('addNoticias');
+	})
+
+	/*Voluntarios*/
+
+	app.get('/voluntarios', function (req,res){
+		Voluntario.find()
+		.exec(function (err,voluntarios){
+			var voluntarioJson = _.map(voluntarios, function(voluntario){
+				return voluntario.toJSON();
+			});
+
+			res.render('voluntarios', {
+				voluntarios : voluntarioJson
+			});
+		});
+	})
+
+	app.get('/add/voluntario', function (req,res){
+		res.render('addVoluntario');
 	})
 
 };

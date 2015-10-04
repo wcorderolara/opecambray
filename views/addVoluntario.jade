@@ -1,0 +1,14 @@
+extends ./pxl-layout.jade
+block contenido
+	include ./menuAdmin.jade
+
+	section(class="row")
+		h2 Agregar Voluntario
+		div(class="col-full")
+
+			form(action='/post/voluntario', id='frmVoluntario', method='post', role='form')
+				.form-group
+					label Nombre
+					input.form-control(type='text', placeholder='Nombre Voluntario' name="nombre_voluntario" id="nombre_empresa")
+
+				button.btn.btn-primary(id='addVoluntario') Agregar Voluntario

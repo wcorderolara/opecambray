@@ -7,7 +7,9 @@ block contenido
 
 	section(class="row")
 		div(class="col-full")
-			table(class="table table-hover")
+			.form-group
+				include buscador.jade
+			table(class="table table-hover" id="my-table")
 				thead
 					tr
 						th Nombre

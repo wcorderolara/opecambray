@@ -11,7 +11,7 @@ block contenido
 		div(class="col-full")
 			p Cantidad personas Fallecidas #{fallecidos.length}
 			form-group
-				input.form-control(type="text" id="kwd_search" value="" placeholder="buscar persona")
+				include buscador.jade
 			table.table.table-hover(id="my-table")
 				thead
 					tr

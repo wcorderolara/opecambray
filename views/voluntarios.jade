@@ -11,7 +11,9 @@ block contenido
 	section(class="row")
 		div(class="col-full")
 			p Total de Voluntarios #{voluntarios.length}
-			table.table.table-hover
+			.form-group
+				include buscador.jade
+			table.table.table-hover(id="my-table")
 				thead
 					tr
 						th Nombre Voluntario

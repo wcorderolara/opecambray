@@ -1,0 +1,35 @@
+doctype html
+html
+head
+	meta(charset="utf-8")
+	meta(http-equiv="X-UA-Compatible" content="IE=edge")
+	meta(name="viewport" content="width=device-width, initial-scale=1.0")
+	link(rel="shortcut icon" href="/img/opeC.png")
+	link(rel="stylesheet" href="/css/pxl-style.css")
+	link(rel="stylesheet" href="/css_tema/vendor/fluidbox.min.css")
+	link(rel="stylesheet" href="/css_tema/main.css")
+	link(rel="stylesheet" href="/bower/bootstrap/dist/css/bootstrap.css")
+	title Operación Cambray
+body
+	header
+		div(id="logo-container")
+			div(id="logo") #[a(href="/") Operación Cambray]
+			div(id="subtitle") Todos unidos por una misma causa
+
+		nav
+			ul
+				li #[a(href="/centrosAcopio" class="bordered") centros de acopio]
+				li #[a(href="/desaparecidos" class="bordered") desaparecidos]
+				li #[a(href="/fallecidos" class="bordered") fallecidos]
+				li #[a(href="/quellevar" class="bordered") que puedo llevar?]
+				li #[a(href="/empresasApoyan" class="bordered") empresas que están apollando]
+				li #[a(href="/noticias" class="bordered") noticias]
+	div(id="content")
+		block contenido
+		section(class="row")
+			div(class="col-full")
+				p.pxl-creditos este sitio fue creado con el apollo de la comunidad del codigo #[span(class="pxl-color-tres") Walter Cordero, Roberto SLopéz, Davincho MoCa, Byron Martinez].
+	script(src="/bower/jquery/dist/jquery.min.js")
+	script(src="/js/vendor/jquery.1.11.min.js")
+	script(src="/js/vendor/jquery.fluidbox.min.js")
+	script(src="/js/main.js")

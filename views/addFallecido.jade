@@ -1,0 +1,18 @@
+extends ./pxl-layout.jade
+block contenido
+	include ./menuAdmin.jade
+
+	section(class="row")
+		h2 Agregar Fallecidos
+		div(class="col-full")
+			form(action='/post/fallecido', method='POST', role='form', id='frmFallecido')
+				.form-group
+					label Nombre de Fallecido
+					input.form-control(type='text', placeholder='Nombre' name="nombre_fallecido")
+				.form-group
+					label Edad Fallecido
+					input.form-control(type='text', placeholder="Edad" name="edad_fallecido")
+
+
+				button.btn.btn-primary(id='addFallecido') Agregar Fallecido
+

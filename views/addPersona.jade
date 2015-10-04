@@ -1,0 +1,24 @@
+extends ./pxl-layout.jade
+block contenido
+	include ./menuAdmin.jade
+
+	section(class="row")
+		h2 Agregar a personas
+		div(class="col-full")
+			form(action='', method='POST', role='form')
+				.form-group
+					label Nombre de la persona
+					input.form-control(type='text', placeholder='Nombre' name="nombrePersona")
+				.form-group
+					label Edad
+					input.form-control(type='text', placeholder="Dirección" name="direccionPersona")
+				.form-group
+					label Estado
+					select.form-control(name="estadoPersona")
+						option(value="") seleccionar
+						option(value="encontrado") encontrado
+						option(value="desaparecido") desaparecido
+						option(value="fallecido") fallecido
+
+				button.btn.btn-primary(type='submit') Agregar
+

@@ -1,0 +1,24 @@
+extends ./pxl-layout.jade
+block contenido
+	include ./menuAdmin.jade
+	section(class="row")
+		h2 Agregar Centro
+		div(class="col-full")
+
+			form(action='/post/centro', method='POST', role='form' id='frmAddCentro')
+				.form-group
+					label Nombre del centro
+					input.form-control(type='text', placeholder='Nombre' name="nombre_centro")
+				.form-group
+					label Dirección
+					input.form-control(type='text', placeholder="Dirección" name="direccion_centro")
+				.form-group
+					label Municipio
+					input.form-control(type='text', placeholder="Municipio" name="municipio_centro")
+				.form-group
+					label Zona
+					input.form-control(type='text', placeholder="Zona" name="zona_centro")
+
+
+				button.btn.btn-primary(name='addCentro' id='addCentro') Agregar
+

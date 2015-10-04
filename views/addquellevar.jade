@@ -1,0 +1,21 @@
+extends ./pxl-layout.jade
+block contenido
+	include ./menuAdmin.jade
+
+	section(class="row")
+		h2 Agregar alimentos e insumos
+		div(class="col-full")
+
+			form(action='', method='POST', role='form')
+				.form-group
+					label Nombre
+					input.form-control(type='text', placeholder='Nombre' name="nombreQuellevar")
+				.form-group
+					label Tipo
+					select.form-control(name="tipoQuellevar")
+						option(value="") seleccionar
+						option(value="Alimentos de primera necesidad") Alimentos de primera necesidad
+						option(value="Kit de limpieza") Kit de limpieza
+						option(value="Kit de higiene") Kit de higiene
+						option(value="Otros") Otros
+				button.btn.btn-primary(type='submit') Agregar

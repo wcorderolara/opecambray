@@ -1,0 +1,25 @@
+html,
+body {
+  height: 100% !important;
+  width: 100% !important;
+  background-color: #fff !important;
+}
+.pxl-table {
+  display: table;
+  width: 100%;
+}
+.pxl-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.pxl-creditos {
+  font-size: 12px !important;
+  color: #989a9b;
+}
+.pxl-color-tres {
+  color: #e85151;
+}
+.pxl-img {
+  width: 100%;
+  height: auto;
+}

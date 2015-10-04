@@ -1,0 +1,17 @@
+extends ./pxl-layout.jade
+block contenido
+	include ./menuAdmin.jade
+
+	section(class="row")
+		h2 Agregar Desaparecidos
+		div(class="col-full")
+			form(action='/post/desaparecido', method='POST', role='form', id='frmDesaparecido')
+				.form-group
+					label Nombre Desaparecido
+					input.form-control(type='text', placeholder='Nombre' name="nombre_desaparecido")
+				.form-group
+					label Edad Desaparecido
+					input.form-control(type='text', placeholder="Edad" name="edad_desaparecido")
+
+				button.btn.btn-primary(id="addDesaparecido") Agregar Desaparecido
+

@@ -1,0 +1,22 @@
+extends ./pxl-layout.jade
+block contenido
+	section(class="row")
+		div(class="col-full")
+			h2 Personas que han Fallecido
+			p esta información fue recoletada de diferentes medios de comunicación y se reunio con el fin de mantener la informacion lo más centralizada posible.
+
+
+
+	section(class="row")
+		div(class="col-full")
+			p Cantidad personas Fallecidas #{fallecidos.length}
+			table.table.table-hover
+				thead
+					tr
+						th Nombre Fallecido
+						th edad
+				tbody
+					each fallecido in fallecidos
+						tr
+							td= fallecido.nombre
+							td= fallecido.edad

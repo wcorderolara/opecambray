@@ -1,0 +1,12 @@
+extends ./pxl-layout.jade
+block contenido
+	section(class="row")
+		div(class="col-full")
+			h2 Empresas
+			p estas son algunas de las empresas que se han unido a la causa
+
+	section(class="row")
+		div.col-xs-12
+			each empresa in empresas
+				div.col-sm-3.col-xs-6
+					img.pxl-img(src="/img/empresas/#{empresa.photo}")

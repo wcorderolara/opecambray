@@ -1,0 +1,17 @@
+extends ./pxl-layout.jade
+block contenido
+	include ./menuAdmin.jade
+
+	section(class="row")
+		h2 Publicar una noticia
+		div(class="col-full")
+
+			form(action='/post/noticia', method='POST', role='form', id='frmNoticia')
+				.form-group
+					label Titulo
+					input.form-control(type='text', placeholder='Nombre' name="titulo_noticia")
+				.form-group
+					label Contenido
+					textarea.form-control(name="contenido_noticia")
+
+				button.btn.btn-primary(id='addNoticia') Publicar Noticia

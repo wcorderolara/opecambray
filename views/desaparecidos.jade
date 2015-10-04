@@ -1,0 +1,22 @@
+extends ./pxl-layout.jade
+block contenido
+	section(class="row")
+		div(class="col-full")
+			h2 Personas Desaparecidas
+			p esta información fue recoletada de diferentes medios de comunicación y se reunio con el fin de mantener la informacion lo más centralizada posible.
+
+
+
+	section(class="row")
+		div(class="col-full")
+			p Cantidad personas Desaparecidas #{desaparecidos.length}
+			table.table.table-hover
+				thead
+					tr
+						th Nombre
+						th edad
+				tbody
+					each desaparecido in desaparecidos
+						tr
+							td= desaparecido.nombre
+							td= desaparecido.edad

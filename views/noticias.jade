@@ -1,0 +1,18 @@
+extends ./pxl-layout.jade
+block contenido
+	section(class="row")
+		div(class="col-full")
+			h2 Noticias
+			p esta información fue recoletada de diferentes medios de comunicación y se reunio con el fin de mantener la informacion lo más centralizada posible.
+
+	section(class="row")
+			div(class="media")
+
+				each noticia in noticias
+					div(class="media-left")
+							span(class="glyphicon glyphicon-asterisk pxl-color-tres")
+						div(class="media-body")
+							h4(class="media-heading") #{noticia.titulo}
+							= noticia.contenido
+
+

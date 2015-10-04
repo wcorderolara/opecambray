@@ -1,0 +1,23 @@
+extends ./pxl-layout.jade
+block contenido
+	section(class="row")
+		div(class="col-full")
+			h2 Centros de Acopio
+			p Toda la informaci&oacute;n que se encuentra en este sitio ha sido recolectada a traves de diferentes medios de comunicación. Se ha reunido con el fin de mantener a los ciudadanos guatemaltecos al d&iacute;a con la informaci&oacute;n sobre la cat&aacute;strofe de Cambray en Santa Catarina Pinula y tener toda la informaci&oacute;n lo mas centralizada posible para su f&aacute;cil acceso.
+
+	section(class="row")
+		div(class="col-full")
+			table(class="table table-hover")
+				thead
+					tr
+						th Nombre
+						th Dirección
+						th Municipio
+						th Zona
+				tbody
+					each centro in centros
+						tr
+							td= centro.nombre
+							td= centro.direccion
+							td= centro.municipio
+							td= centro.zona

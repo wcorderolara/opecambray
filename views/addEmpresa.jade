@@ -1,0 +1,17 @@
+extends ./pxl-layout.jade
+block contenido
+	include ./menuAdmin.jade
+
+	section(class="row")
+		h2 Agregar Empresa
+		div(class="col-full")
+
+			form(action='/post/empresa', id='frmEmpresa', method='post', role='form' enctype="multipart/form-data")
+				.form-group
+					label Nombre
+					input.form-control(type='text', placeholder='Nombre' name="nombre_empresa" id="nombre_empresa")
+				.form-group
+					label Logo
+					input.form-control(type="file" name="photo_empresa" id="photo_empresa")
+
+				button.btn.btn-primary(id='addEmpresa') Agregar

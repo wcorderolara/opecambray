@@ -3,13 +3,15 @@ block contenido
 	section(class="row")
 		div(class="col-full")
 			h2 Personas que han Fallecido (identificadas)
-			p esta información fue recoletada de diferentes medios de comunicación y se reunio con el fin de mantener la informacion lo más centralizada posible.
+			include mensaje.jade
 
 
 
 	section(class="row")
 		div(class="col-full")
 			p Cantidad personas Fallecidas #{fallecidos.length}
+			form-group
+				input.form-control(name="buscar persona")
 			table.table.table-hover
 				thead
 					tr
@@ -17,6 +19,6 @@ block contenido
 						th edad
 				tbody
 					each fallecido in fallecidos
-						tr
+						tr.lista
 							td= fallecido.nombre
 							td= fallecido.edad

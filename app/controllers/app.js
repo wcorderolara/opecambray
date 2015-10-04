@@ -3,6 +3,7 @@ var Desaparecido = require('../models/desaparecido');
 var Fallecido = require('../models/fallecido');
 var Empresa = require('../models/empresacolabora');
 var Noticia = require('../models/noticia');
+var Voluntario = require('../models/voluntarios');
 var _ = require('underscore');
 var uuid = require('uuid');
 var fs = require('fs');
@@ -104,6 +105,23 @@ var appController = function(app){
                 return;
 			}else{
 				res.redirect('/add/noticia');
+			}
+		});
+	});
+
+	app.post('/post/voluntario', function (req,res){
+		var voluntario = new Voluntario({
+			id: uuid.v1(),
+			nombre: req.body.nombre_voluntario,
+		});
+
+		voluntario.save(function (err){
+			if(err){
+				console.log(err);
+				res.send(500);
+				return;
+			}else{
+				res.redirect('/add/voluntario');
 			}
 		});
 	});

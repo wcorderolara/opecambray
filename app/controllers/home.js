@@ -4,15 +4,30 @@ var Fallecido = require('../models/fallecido');
 var Empresa = require('../models/empresacolabora');
 var Noticia = require('../models/noticia');
 var Voluntario = require('../models/voluntarios');
+var Twit = require('twit');
 var _ = require('underscore');
 
 
 var homeController = function(app){
 	console.log("Home Controller is Load");
 
+	var T = new Twit({
+		consumer_key: 'kkIa0DqjsR4jgikGKYQ4hfUEG',
+		consumer_secret: 'e0Yb80GqzZvIgUUrMNsEUHfKJYFvNLoJ1QljMdLj3zuvpeaacx',
+		access_token: '52103444-vYRGoRwarY8JdTd6fz9xOA8Fy8yhYIco86lH39CKS',
+		access_token_secret: 'nARdvmxilcAn5rtxuZw7Yy8fUKMRaN0eV2XRYGrZqbtIa' 
+
+	})
+
 	app.get('/', function (req,res){
-		res.render('index');
+
+		T.get('search/tweets', {q: 'cambray since:2015-10-01', count: 50}, function (err,data, response){
+			res.render('index', {
+				twits : data
+			});
+		})
 	});
+
 
 	app.get('/centrosAcopio', function (req,res){
 		Centro.find()

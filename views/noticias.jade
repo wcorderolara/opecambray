@@ -6,13 +6,15 @@ block contenido
 			include mensaje.jade
 
 	section(class="row")
-			div(class="media")
-
 				each noticia in noticias
-					div(class="media-left")
-							span(class="glyphicon glyphicon-asterisk pxl-color-tres")
-						div(class="media-body")
-							h4(class="media-heading") #{noticia.titulo}
-							= noticia.contenido
-
-
+					div.col-sm-6.pxl-noticia
+						div(class="media")
+							div(class="media-left")
+									span(class="glyphicon glyphicon-asterisk pxl-color-tres")
+								div(class="media-body")
+									h4(class="media-heading") #{noticia.titulo}
+									!= noticia.contenido
+									p
+										a.btn.btn-danger(href="http://www.facebook.com/share.php?u=http://www.operacioncambray.com/noticias/&t=Titulo+titulo+titulo") #[i.icon.ion-social-facebook]
+										= " "
+										a.btn.btn-danger(href="http://twitter.com/share?url=http://www.operacioncambray.com/noticias/&text=#{noticia.contenido}") #[i.icon.ion-social-twitter]

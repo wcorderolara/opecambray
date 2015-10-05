@@ -13,7 +13,7 @@ body {
   vertical-align: middle;
 }
 .pxl-creditos {
-  font-size: 12px !important;
+  font-size: 10px !important;
   color: #989a9b;
 }
 .pxl-color-tres {
@@ -22,4 +22,8 @@ body {
 .pxl-img {
   width: 100%;
   height: auto;
+}
+.pxl-noticia {
+  padding-bottom: 20px;
+  padding-top: 20px;
 }

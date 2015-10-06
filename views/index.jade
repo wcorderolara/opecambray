@@ -3,15 +3,21 @@ block contenido
 	div(id="content")
 		section(class="intro")
 			h1 Unidos todos por una misma causa, ¡ayudar!
-			p El objetivo de esta página es unificar toda la información posible de diferentes medios y poder asi ayudar a orientar a las personas que quieren contribuir o informarse
+			p El objetivo de esta página es unificar toda la información posible de diferentes medios y poder así ayudar a orientar a las personas que quieren contribuir o informarse
 
 		section(class="row")
-			each twit in twits.statuses
-				img(src="#{twit.user.profile_image_url}", width="50px", height="50px")
-				p= twit.user.name
-				p= twit.text
+			div.col-full
+				h2 Lo ultimo
+				div.col-sm-12.pxl-twits
+					each twit in twits.statuses
+						div.col-sm-12.pxl-noticia.padding-cero
+							div.col-sm-1.padding-cero
+								img(class="" src="#{twit.user.profile_image_url}" style="width:48px; height:48px")
+							div.col-sm-11.padding-cero
+								h4.media-heading= twit.user.name
+								= twit.text
 
 		section(class="row")
 			div(class="col-full")
 				h2 QUIENES SOMOS
-				p Somos un acomunidad de desarrolladores que por medio de la tecnología queremos contribuir y ayudar.
+				p Somos una comunidad de desarrolladores que por medio de la tecnología queremos contribuir y ayudar.

@@ -14,6 +14,7 @@ html
 		link(rel="stylesheet" href="/css_tema/main.css")
 		link(rel="stylesheet" href="/bower/bootstrap/dist/css/bootstrap.min.css")
 		link(rel="stylesheet" href="/bower/ionicons/css/ionicons.min.css")
+		link(rel="stylesheet" href="/bower/flexMenu/css/jquery.sidr.dark.css")
 
 		link(rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png")
 		link(rel="apple-touch-icon" sizes="60x60" href="/img/favicon//apple-icon-60x60.png")
@@ -31,22 +32,28 @@ html
 		link(rel="manifest" href="/img/favicon//manifest.json")
 		title Operación Cambray
 	body
+
 		header
 			div(id="logo-container")
 				div(id="logo") #[a(href="/") Operación Cambray]
 				div(id="subtitle") Todos unidos por una misma causa
 
-			nav
+			nav(id="pxl-menu-mobil").navbar.navbar-default
+				.navbar-header
+					button(type="button", data-toggle="collapse", data-target=".navbar-ex1-collapse").navbar-toggle.collapsed
+						span.sr-only Toggle navigation
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+					//a(href="#" ).navbar-brand Title
+				.collapse.navbar-collapse.navbar-ex1-collapse
+					ul.nav.navbar-nav
+						include menuLinks.jade
+
+			nav.menu-escritorio
 				ul
-					li #[a(href="/centrosAcopio" class="bordered") Centros de Acopio]
-					li #[a(href="/desaparecidos" class="bordered") Desaparecidos]
-					li #[a(href="/fallecidos" class="bordered") Fallecidos]
-					li #[a(href="/quellevar" class="bordered") ¿Que puedo llevar?]
-					li #[a(href="/voluntarios" class="bordered") Voluntarios y Colaboradores]
-					li #[a(href="/empresasApoyan" class="bordered") Empresas que Apoyan]
-					li #[a(href="/noticias" class="bordered") Noticias]
-					li #[a(href="/mapa" class="bordered") ¿Donde se habla de esto?]
-					li #[a(href="https://play.google.com/store/apps/details?id=byron.cambray.operacion.operacioncambray" target="_blank" class="bordered" ) Descarga el app]
+					include menuLinks.jade
+
 		div(id="content")
 			block contenido
 			section(class="row")
@@ -56,7 +63,7 @@ html
 		script(src="/bower/jquery/dist/jquery.min.js")
 		script(src="/js/vendor/jquery.1.11.min.js")
 		script(src="/js/vendor/jquery.fluidbox.min.js")
-		script(src="/bower/bootstrap/js/bootstrap.min.js")
+		script(src="/bower/bootstrap/dist/js/bootstrap.min.js")
 		script(src="/js/main.js")
 		script.
 			 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

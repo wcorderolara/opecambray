@@ -56,3 +56,37 @@ body ::-webkit-scrollbar-thumb {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+#pxl-menu-mobil {
+  display: none;
+  margin-top: 20px;
+  width: 100% !important;
+  background-color: initial !important;
+  border-color: initial !important;
+  border: 2px solid #e85151 !important;
+}
+#pxl-menu-mobil .bordered {
+  border-radius: 0.2em;
+  padding: 0.4em;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+  border: initial !important;
+  color: #e85151 !important;
+}
+.navbar-default .navbar-toggle {
+  border-color: initial !important;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #e85151 !important;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #e85151 !important;
+}
+@media only screen and (max-width: 767px) {
+  .menu-escritorio {
+    display: none;
+  }
+  #pxl-menu-mobil {
+    display: block;
+  }
+}

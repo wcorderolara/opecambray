@@ -69,3 +69,47 @@ body{
 	margin-bottom:10px;
 }
 
+// --------------------- Menu
+
+#pxl-menu-mobil{
+    display: none;
+    margin-top: 20px;
+    width: 100% !important;
+    background-color:initial !important;
+    border-color: initial !important;
+    border: 2px solid @pxl-color-tres !important;
+
+    	.bordered{
+			border-radius: 0.2em;
+    		padding: 0.4em;
+    		padding-left: 0.8em;
+    		padding-right: 0.8em;
+    		border: initial !important;
+    		color: @pxl-color-tres !important;
+    	}
+}
+
+.navbar-default .navbar-toggle {
+    border-color: initial !important;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: @pxl-color-tres !important;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: @pxl-color-tres !important;
+}
+
+
+@media only screen and (max-width: 767px){
+	.menu-escritorio{
+		display: none;
+	}
+
+	#pxl-menu-mobil{
+		display: block;
+	}
+}
+
+

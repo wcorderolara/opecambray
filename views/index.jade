@@ -12,7 +12,7 @@ block contenido
 					each twit in twits.statuses
 						div.col-sm-12.pxl-noticia.padding-cero
 							div.col-sm-1.padding-cero
-								img(class="" src="#{twit.user.profile_image_url}" style="width:48px; height:48px")
+								img(class="pxl-icon-twit" src="#{twit.user.profile_image_url}" style="width:48px; height:48px")
 							div.col-sm-11.padding-cero
 								h4.media-heading= twit.user.name
 								= twit.text

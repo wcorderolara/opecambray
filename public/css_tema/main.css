@@ -510,7 +510,7 @@ header nav ul li a.bordered {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 5em;
+  margin-bottom: 8px;
 }
 #content section.intro:after {
   content: "";
@@ -526,8 +526,9 @@ header nav ul li a.bordered {
   font-size: 8em;
   border-top: 2px solid #262929;
   letter-spacing: -0.05em;
-  margin-top: 1.2em;
-  margin-bottom: 1em;
+  margin-top: 26px;
+  margin-bottom: 60px;
+  padding-top: 30px;
 }
 @media screen and (max-width: 540px) {
   #content section.intro h1 {
@@ -579,7 +580,6 @@ header nav ul li a.bordered {
   width: 48.82117%;
   border-top: 2px solid #ced9e0;
   padding-top: 1em;
-  padding-bottom: 3em;
 }
 #content section.row .col:last-child,
 #content section.row .col-full:last-child {

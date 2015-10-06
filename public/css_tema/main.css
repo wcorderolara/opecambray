@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 html,
 body,
 div,
@@ -77,6 +78,7 @@ video {
 html,
 body {
   font-size: 100%;
+  font-family: 'Open Sans', sans-serif !important;
 }
 article,
 aside,
@@ -497,7 +499,7 @@ header nav ul li a.bordered {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 1.2em;
+  padding-bottom: 2em;
   opacity: 0;
   -webkit-transform: translateY(50px);
   -moz-transform: translateY(50px);
@@ -520,7 +522,7 @@ header nav ul li a.bordered {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 1em;
+  margin-bottom: 5em;
 }
 #content section.intro:after {
   content: "";
@@ -536,8 +538,8 @@ header nav ul li a.bordered {
   font-size: 8em;
   border-top: 2px solid #262929;
   letter-spacing: -0.05em;
-  /*margin-top: 1.2em;*/
-  /*margin-bottom: 1em;*/
+  margin-top: 1.2em;
+  margin-bottom: 1em;
 }
 @media screen and (max-width: 540px) {
   #content section.intro h1 {
@@ -563,7 +565,7 @@ header nav ul li a.bordered {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 1.2em;
+  padding-top: 2em;
 }
 #content section.row:after {
   content: "";
@@ -589,7 +591,7 @@ header nav ul li a.bordered {
   width: 48.82117%;
   border-top: 2px solid #ced9e0;
   padding-top: 1em;
-  padding-bottom: 1.2em;
+  padding-bottom: 3em;
 }
 #content section.row .col:last-child,
 #content section.row .col-full:last-child {

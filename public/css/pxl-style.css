@@ -4,6 +4,20 @@ body {
   width: 100% !important;
   background-color: #fff !important;
 }
+body ::-webkit-scrollbar {
+  /* cuerpo del scrollbar */
+  width: 10px;
+}
+body ::-webkit-scrollbar-track {
+  /* espacio de scroll */
+}
+body ::-webkit-scrollbar-track-piece {
+  /* area bacia de barra scroll */
+}
+body ::-webkit-scrollbar-thumb {
+  /* barra de scroll */
+  background: #e85151;
+}
 .pxl-table {
   display: table;
   width: 100%;

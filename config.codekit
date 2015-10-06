@@ -4,25 +4,25 @@
 "files": {
 	"\/app\/controllers\/app.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/app\/controllers\/app.js",
 		"outputAbbreviatedPath": "\/app\/controllers\/min\/app-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
 		},
 	"\/app\/controllers\/home.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/app\/controllers\/home.js",
 		"outputAbbreviatedPath": "\/app\/controllers\/min\/home-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
 		},
 	"\/app\/models\/centroacopio.js": {
 		"fileType": 64,
@@ -32,8 +32,8 @@
 		"outputAbbreviatedPath": "\/app\/models\/min\/centroacopio-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
 		},
 	"\/app\/models\/desaparecido.js": {
 		"fileType": 64,
@@ -43,8 +43,8 @@
 		"outputAbbreviatedPath": "\/app\/models\/min\/desaparecido-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
 		},
 	"\/app\/models\/empresacolabora.js": {
 		"fileType": 64,
@@ -54,8 +54,8 @@
 		"outputAbbreviatedPath": "\/app\/models\/min\/empresacolabora-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
 		},
 	"\/app\/models\/fallecido.js": {
 		"fileType": 64,
@@ -65,8 +65,8 @@
 		"outputAbbreviatedPath": "\/app\/models\/min\/fallecido-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
 		},
 	"\/app\/models\/models.js": {
 		"fileType": 64,
@@ -76,8 +76,8 @@
 		"outputAbbreviatedPath": "\/app\/models\/min\/models-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
 		},
 	"\/app\/models\/noticia.js": {
 		"fileType": 64,
@@ -87,8 +87,8 @@
 		"outputAbbreviatedPath": "\/app\/models\/min\/noticia-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
 		},
 	"\/app\/models\/schemas.js": {
 		"fileType": 64,
@@ -98,8 +98,8 @@
 		"outputAbbreviatedPath": "\/app\/models\/min\/schemas-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
 		},
 	"\/app\/models\/voluntarios.js": {
 		"fileType": 64,
@@ -109,8 +109,8 @@
 		"outputAbbreviatedPath": "\/app\/models\/min\/voluntarios-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
 		},
 	"\/package.json": {
 		"fileType": 524288,
@@ -754,7 +754,7 @@
 		"syntaxCheckerStyle": 1
 		},
 	"\/views\/addCentro.jade": {
-		"compileDebug": 1,
+		"compileDebug": 0,
 		"fileType": 512,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,
@@ -765,7 +765,7 @@
 		"outputStyle": 0
 		},
 	"\/views\/addDesaparecido.jade": {
-		"compileDebug": 1,
+		"compileDebug": 0,
 		"fileType": 512,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,
@@ -776,7 +776,7 @@
 		"outputStyle": 0
 		},
 	"\/views\/addEmpresa.jade": {
-		"compileDebug": 1,
+		"compileDebug": 0,
 		"fileType": 512,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,
@@ -787,7 +787,7 @@
 		"outputStyle": 0
 		},
 	"\/views\/addFallecido.jade": {
-		"compileDebug": 1,
+		"compileDebug": 0,
 		"fileType": 512,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,
@@ -798,7 +798,7 @@
 		"outputStyle": 0
 		},
 	"\/views\/addNoticias.jade": {
-		"compileDebug": 1,
+		"compileDebug": 0,
 		"fileType": 512,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,
@@ -809,7 +809,7 @@
 		"outputStyle": 0
 		},
 	"\/views\/addPersona.jade": {
-		"compileDebug": 1,
+		"compileDebug": 0,
 		"fileType": 512,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,
@@ -820,7 +820,7 @@
 		"outputStyle": 0
 		},
 	"\/views\/addquellevar.jade": {
-		"compileDebug": 1,
+		"compileDebug": 0,
 		"fileType": 512,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,
@@ -831,7 +831,7 @@
 		"outputStyle": 0
 		},
 	"\/views\/addVoluntario.jade": {
-		"compileDebug": 1,
+		"compileDebug": 0,
 		"fileType": 512,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,
@@ -842,7 +842,7 @@
 		"outputStyle": 0
 		},
 	"\/views\/buscador.jade": {
-		"compileDebug": 1,
+		"compileDebug": 0,
 		"fileType": 512,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,
@@ -853,7 +853,7 @@
 		"outputStyle": 0
 		},
 	"\/views\/centros.jade": {
-		"compileDebug": 1,
+		"compileDebug": 0,
 		"fileType": 512,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,
@@ -864,7 +864,7 @@
 		"outputStyle": 0
 		},
 	"\/views\/desaparecidos.jade": {
-		"compileDebug": 1,
+		"compileDebug": 0,
 		"fileType": 512,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,
@@ -875,7 +875,7 @@
 		"outputStyle": 0
 		},
 	"\/views\/empresas.jade": {
-		"compileDebug": 1,
+		"compileDebug": 0,
 		"fileType": 512,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,
@@ -886,7 +886,7 @@
 		"outputStyle": 0
 		},
 	"\/views\/fallecidos.jade": {
-		"compileDebug": 1,
+		"compileDebug": 0,
 		"fileType": 512,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,
@@ -897,7 +897,7 @@
 		"outputStyle": 0
 		},
 	"\/views\/index.jade": {
-		"compileDebug": 1,
+		"compileDebug": 0,
 		"fileType": 512,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,
@@ -907,8 +907,19 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
+	"\/views\/mapaTwitter.jade": {
+		"compileDebug": 0,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/views\/mapaTwitter.jade",
+		"outputAbbreviatedPath": "\/views\/mapaTwitter.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
 	"\/views\/mensaje.jade": {
-		"compileDebug": 1,
+		"compileDebug": 0,
 		"fileType": 512,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,
@@ -919,7 +930,7 @@
 		"outputStyle": 0
 		},
 	"\/views\/mensaje2.jade": {
-		"compileDebug": 1,
+		"compileDebug": 0,
 		"fileType": 512,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,
@@ -930,7 +941,7 @@
 		"outputStyle": 0
 		},
 	"\/views\/menuAdmin.jade": {
-		"compileDebug": 1,
+		"compileDebug": 0,
 		"fileType": 512,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,
@@ -941,7 +952,7 @@
 		"outputStyle": 0
 		},
 	"\/views\/noticias.jade": {
-		"compileDebug": 1,
+		"compileDebug": 0,
 		"fileType": 512,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,
@@ -952,7 +963,7 @@
 		"outputStyle": 0
 		},
 	"\/views\/personas.jade": {
-		"compileDebug": 1,
+		"compileDebug": 0,
 		"fileType": 512,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,
@@ -963,7 +974,7 @@
 		"outputStyle": 0
 		},
 	"\/views\/pxl-layout.jade": {
-		"compileDebug": 1,
+		"compileDebug": 0,
 		"fileType": 512,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,
@@ -974,7 +985,7 @@
 		"outputStyle": 0
 		},
 	"\/views\/quellevar.jade": {
-		"compileDebug": 1,
+		"compileDebug": 0,
 		"fileType": 512,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,
@@ -985,7 +996,7 @@
 		"outputStyle": 0
 		},
 	"\/views\/voluntarios.jade": {
-		"compileDebug": 1,
+		"compileDebug": 0,
 		"fileType": 512,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,

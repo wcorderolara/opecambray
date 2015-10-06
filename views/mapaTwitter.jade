@@ -1,0 +1,10 @@
+extends ./pxl-layout.jade
+block contenido
+	section(class="row")
+		div(class="col-full")
+			h2 Donde se habla del acontecimiento
+			h6 mapa cortesia de #[a(href="https://cartodb.com/" target="_blank") CartoDB]
+
+	section(class="row")
+		div.col-sm-12.padding-cero
+			iframe(width="100%" height="520" frameborder="0" src="https://tscompany09.cartodb.com/viz/cbd05b62-6c3e-11e5-be87-0e787de82d45/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen)

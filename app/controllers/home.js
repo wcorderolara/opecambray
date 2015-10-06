@@ -15,7 +15,7 @@ var homeController = function(app){
 		consumer_key: 'kkIa0DqjsR4jgikGKYQ4hfUEG',
 		consumer_secret: 'e0Yb80GqzZvIgUUrMNsEUHfKJYFvNLoJ1QljMdLj3zuvpeaacx',
 		access_token: '52103444-vYRGoRwarY8JdTd6fz9xOA8Fy8yhYIco86lH39CKS',
-		access_token_secret: 'nARdvmxilcAn5rtxuZw7Yy8fUKMRaN0eV2XRYGrZqbtIa' 
+		access_token_secret: 'nARdvmxilcAn5rtxuZw7Yy8fUKMRaN0eV2XRYGrZqbtIa'
 
 	})
 
@@ -67,7 +67,7 @@ var homeController = function(app){
 		Fallecido.find()
 		.exec(function (err, fallecidos){
 			var fallecidoJson = _.map(fallecidos, function(fallecido){
-				return fallecido.toJSON();	
+				return fallecido.toJSON();
 			});
 
 			res.render('fallecidos',{
@@ -91,7 +91,7 @@ var homeController = function(app){
 				empresas : empresaJson
 			});
 		});
-	
+
 	});
 
 	app.get('/add/empresa', function (req,res){
@@ -136,6 +136,10 @@ var homeController = function(app){
 
 	app.get('/add/voluntario', function (req,res){
 		res.render('addVoluntario');
+	})
+
+	app.get('/mapa', function (req,res){
+		res.render('mapaTwitter');
 	})
 
 };

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="utf-8">
+
+    <title>bootstrap-wysihtml5</title>
+
+
+    <link rel="stylesheet" type="text/css" href="lib/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="src/bootstrap-wysihtml5.css" />
+    <script src="lib/js/wysihtml5-0.3.0.js"></script>
+    <script src="lib/js/jquery.js"></script>
+    <script src="lib/js/bootstrap.js"></script>
+    <script src="src/bootstrap3-wysihtml5.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="hero-unit" style="margin-top:40px">
+        <textarea class="textarea form-control" placeholder="Enter text ..." style="width: 810px; height: 200px">
+
+        </textarea>
+        <a href="#" class="enviar">Click</a>
+    </div>
+</div>
+
+<script>
+    $('.textarea').wysihtml5();
+
+    $('.enviar').click(function() {
+        var campo = $('.textarea').val()
+        console.log(campo+'hola');
+    });
+</script>
+
+</body>
+</html>

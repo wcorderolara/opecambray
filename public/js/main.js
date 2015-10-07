@@ -7,6 +7,8 @@ $(document).ready(function() {
 		$('a[rel="lightbox"]').fluidbox();
 	})
 
+	$('.textarea-noticia').wysihtml5();
+
 });
 
 $("#addCentro").on("click", function (e){

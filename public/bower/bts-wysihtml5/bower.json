@@ -1,0 +1,21 @@
+{
+  "name": "bootstrap3-wysihtml5-1.0.2",
+  "version": "1.0.2",
+  "homepage": "https://github.com/GuiAlmeida/bootstrap3-wysihtml5-1.0.2",
+  "authors": [
+    "Guilherme Almeida"
+  ],
+  "main": "./lib/css/bootstrap.css, ./lib/fonts/glyphicons-halflings-regular.eot, ./lib/fonts/glyphicons-halflings-regular.svg, ./lib/fonts/glyphicons-halflings-regular.ttf, ./lib/fonts/glyphicons-halflings-regular.woff, ./src/bootstrap-wysihtml5.css, ./lib/js/wysihtml5-0.3.0.js, ./lib/js/jquery.js, ./lib/js/bootstrap.js, ./src/bootstrap3-wysihtml5.js",
+  "keywords": [
+    "bootstrap",
+    "wysihtml5"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
